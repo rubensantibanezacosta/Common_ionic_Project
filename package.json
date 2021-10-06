@@ -1,0 +1,17 @@
+{
+  "name": "commonproject",
+  "version": "1.0.0",
+  "description": "Student project with Spring, Ionic, and MySQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Spring",
+    "Ionic",
+    "MySQL",
+    "commonproject"
+  ],
+  "author": "Ruben Santibañez Acosta",
+  "license": "ISC"
+}
