@@ -6,13 +6,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { ButtonComponent } from './button/button.component';
 
 
 
 
 
 @NgModule({
-  declarations: [NavbarComponent,SlideshowComponent, LoginFormComponent],
+  declarations: [NavbarComponent,SlideshowComponent, LoginFormComponent, ButtonComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -20,6 +21,6 @@ import { LoginFormComponent } from './login-form/login-form.component';
     RouterModule,
     
   ],
-  exports:[NavbarComponent, SlideshowComponent]
+  exports:[NavbarComponent, SlideshowComponent, LoginFormComponent, ButtonComponent]
 })
 export class ComponentsModule { }

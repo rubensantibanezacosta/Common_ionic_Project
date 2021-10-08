@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginService } from 'src/app/services/login.service';
-import { User } from '../../interfaces/user';
+import { User } from '../../clases/user';
+
 
 @Component({
   selector: 'app-login-form',
@@ -9,7 +10,9 @@ import { User } from '../../interfaces/user';
   styleUrls: ['./login-form.component.scss'],
 })
 export class LoginFormComponent implements OnInit {
-  public user: User;
+  public user=new User();
+  public contenido:string="Entrar";
+  public loginIcon="../../../assets/icon/log-in.png"; 
 
   constructor(private loginService: LoginService,
     private router: Router) { }

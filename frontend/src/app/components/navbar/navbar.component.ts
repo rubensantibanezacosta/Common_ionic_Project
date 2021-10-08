@@ -33,7 +33,7 @@ export class NavbarComponent implements OnInit {
     if (localStorage.getItem('personalToken')) {
       this.Refresh()
         .then(() => localStorage.removeItem('personalToken'))
-        .then(() => this.router.navigate(['/login']))
+        .then(() => this.router.navigate(['/products']))
         .catch((err) => { console.log(err) })
     }
   }
