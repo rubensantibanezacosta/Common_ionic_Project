@@ -6,7 +6,7 @@
   "scripts": {
     "tab:init-json-server": "ttab json-server './fakeServer.json'",
     "tab:npm-i": "ttab -d frontend/ npm i",
-    "tab:serve": "ttab -d frontend/ ionic serve | sleep 30; xdg-open 'http://localhost:8100'",
+    "tab:serve": "ttab -d frontend/ ionic serve",
     "update-packages":"ttab npm i && npm run tab:npm-i",
     "start": "run-s tab:init-json-server tab:serve",
     "update-launch":"npm run update-packages| sleep 30; npm run start"
