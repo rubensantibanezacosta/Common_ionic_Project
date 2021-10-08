@@ -1,0 +1,19 @@
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50vh;
+    margin-top: -5%;
+}
+.info-container h2{
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+.info-container p {
+    color: rgba(255,255,255,0.6);
+    font-size: 1.2rem;
+}

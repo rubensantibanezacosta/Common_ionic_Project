@@ -1,0 +1,24 @@
+<section *ngIf="employees" class="slideshow-container">
+  <div (mousedown)="clikedArrow('leftArrow')" (mouseup)="unClikedArrow('leftArrow')" (click)="previousEmployee()" class="arrow-container__left"><img src={{letfArrow}} alt="{{letfArrow}}" id="leftArrow"></div>
+  
+  <div class="central-container">
+    <div class="carousel-header"><h2>Nuestro Equipo</h2></div>
+    
+    
+      <ul class="carousel-list">
+        <li>
+          
+            <div class="carousel-container__top">
+              <img src="{{ employees[visualizedEmployee].imageUrl }}" alt="{{ employees[visualizedEmployee].alt }}"/>
+            </div>
+            <div class="carousel-container__bottom">
+              <h3>{{ employees[visualizedEmployee].name }}</h3>
+              <h5>{{ employees[visualizedEmployee].job }}</h5>
+            </div>
+        </li>
+      </ul>
+  </div>
+  <div (mousedown)="clikedArrow('rightArrow')" (mouseup)="unClikedArrow('rightArrow')" (click)="nextEmployee()" class="arrow-container__right"><img src={{rightArrow}} alt="{{rightArrow}}" id="rightArrow"></div>
+    
+  
+</section>

@@ -1,0 +1,29 @@
+<nav class="navbar">
+  <div class="navbar__logo-container">
+    <img class="navbar__logo-container--logo" src={{logo}} alt="logo">
+  </div>
+  <div class="navbar__ul-container">
+    <ul class="navbar__ul">
+      <a routerLink="/products" routerLinkActive="active"><li class="navbar__ul--li">Productos</li></a>
+      <a routerLink="/contact" routerLinkActive="active"><li class="navbar__ul--li">Contacto</li></a>
+      <a routerLink="/company" routerLinkActive="active"><li class="navbar__ul--li">Empresa</li></a>
+      <a *ngIf="miToken == 0" routerLink="/login" routerLinkActive="active">
+        <li class="navbar__ul--li">
+          <p>Iniciar sesión</p>
+          
+        </li>
+      </a>
+      <a *ngIf="miToken != 0" routerLink="/login" routerLinkActive="active">
+        <li class="navbar__ul--li">
+          {{userName}}
+            <img src={{logOutIcon}} alt="logout">
+          
+        </li>
+      </a>
+      <a routerLink="#"><li class="navbar__ul--li"><img src={{cartImage}} alt="cartImage" class="navbar__ul--li-img"><ion-badge class="navbar__ul--li-badge" color="light">0</ion-badge></li></a>
+
+    </ul>
+  </div>
+ 
+</nav>
+<div class="logo-container"></div>
