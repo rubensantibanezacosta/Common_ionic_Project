@@ -16,7 +16,7 @@ Place there your MySql credentials.
 On root path execute npm i,
 Then execute npm run update-launch to install packages and launch the project.
 or execute npm start if packages are installed.
-It demorates aproximetly 1 minute.
+It takes aproximetly 1 minute.
 
 You can login with credentials:
 
