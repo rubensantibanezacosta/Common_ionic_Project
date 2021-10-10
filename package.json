@@ -6,9 +6,9 @@
   "scripts": {
     "tab:npm-i": "ttab -d frontend/ npm i",
     "tab:serve": "ttab -d frontend/ ionic serve",
-    "tab:mnv-i":"ttab -d backend/ mnv install| sleep 40; mvn spring-boot:run ",
+    "tab:mvn-i":"ttab -d backend/ mvn install| sleep 40; mvn spring-boot:run ",
     "tab:mvn-run":"ttab -d backend/ mvn spring-boot:run ",
-    "update-packages": "npm run tab:npm-i && npm run tab:mnv-i",
+    "update-packages": "npm run tab:npm-i && npm run tab:mvn-i",
     "start": "run-s tab:serve && tab:mvn-run",
     "update-launch": "npm run update-packages| sleep 30; npm run start"
   },
