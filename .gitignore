@@ -2,7 +2,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/ionic3,linux,java,maven,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=ionic3,linux,java,maven,visualstudiocode
 
-aplication.properties
+##aplication.properties
 ### Ionic3 ###
 # Log an tmp data
 *~
