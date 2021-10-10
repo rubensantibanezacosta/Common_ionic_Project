@@ -24,17 +24,16 @@ With Administrator privilleges:
 
 6. Then execute npm run update-launch to install packages and launch the project.
 
-7. Or execute npm start if packages are installed.
+7. Or execute npm start if packages are installed. It takes aproximetly 1 minute.
 
-8. It takes aproximetly 1 minute.
-
-9. You can login with credentials:
+8. You can login with credentials:
 
     email: ruben@ruben.com
 
     password: 1234
 
 Be FUN!!
+
 
 
 
