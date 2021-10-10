@@ -9,30 +9,44 @@ Mysql,
 Java jdk 11.
 
 ##To initialize proyect:
-Clone repository.
-Import import.sql from path backend/ file to MySQL.
-Create file aplication.properties using aplication.properties.model.txt schema.
-Place there your MySql credentials.
-On root path execute npm i,
-Then execute npm run update-launch to install packages and launch the project.
-or execute npm start if packages are installed.
-It takes aproximetly 1 minute.
 
-You can login with credentials:
+1. Clone repository.
 
-ruben@ruben.com
-1234
+2. Import import.sql from path backend/ file to MySQL.
+
+3. Create file aplication.properties using aplication.properties.model.txt schema.
+
+4. Place there your MySql credentials.
+
+With Administrator privilleges:
+
+5. On root path execute npm i,
+
+6. Then execute npm run update-launch to install packages and launch the project.
+
+7. Or execute npm start if packages are installed.
+
+8. It takes aproximetly 1 minute.
+
+9. You can login with credentials:
+
+    email: ruben@ruben.com
+
+    password: 1234
 
 Be FUN!!
 
 
 
 ##POSTMAN requests in CommonProyect to backend
+
 #GET
+
 users
 http://localhost:8080/users/
 
 #POST
+
 users
 http://localhost:8080/users/
 
@@ -45,10 +59,12 @@ json
   "access": "user"
 }
 #GET
+
 user for email
 http://localhost:8080/users/ruben@ruben.com
 
 #PUT
+
 user by email
 http://localhost:8080/users/test@test.com
 
@@ -61,19 +77,21 @@ json
   "access": "user"
 }
 #GET
+
 employees
 http://localhost:8080/employees/
 
 
 #GET
+
 employee for id
 http://localhost:8080/employees/2
 
 
 #POST
+
 employee
 http://localhost:8080/employees
-
 
 Bodyraw (json)
 json
@@ -83,8 +101,10 @@ json
   "name": "Andrea Martín",
   "job": "Directora de Proyectos"
 }
+
 #PUT
-employee for id
+
+employee by id
 http://localhost:8080/employees/4
 
 Bodyraw (json)
@@ -95,15 +115,19 @@ json
   "name": "Andrea Martínez",
   "job": "Directora de Proyectos"
 }
+
 #GET
+
 products
 http://localhost:8080/products/
 
 #GET
+
 products by id
 http://localhost:8080/products/1
 
 #POST
+
 product
 http://localhost:8080/products
 
@@ -115,13 +139,18 @@ json
   "description": "Leche natural directa de la vaca",
   "price": 3.5
 }
+
 #DEL
+
 user
 http://localhost:8080/users/test@test.com
+
 #DEL
+
 product by id
 http://localhost:8080/products/2
 
 #DEL
+
 employee
 http://localhost:8080/employees/2
