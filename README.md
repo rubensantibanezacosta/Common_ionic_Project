@@ -14,23 +14,23 @@ Java jdk 11.
 
 2. Import import.sql from path backend/ file to MySQL.
 
-3. Create file *aplication.properties* using *aplication.properties.model.txt* schema.
+3. Create file `aplication.properties` using `aplication.properties.model.txt` schema.
 
 4. Place there your MySql credentials.
 
 With Administrator privilleges:
 
-5. On root path execute *npm i*
+5. On root path execute `npm i`
 
-6. Then execute *npm run update-launch* to install packages and launch the project.
+6. Then execute `npm run update-launch` to install packages and launch the project.
 
-7. Or execute *npm start* if packages are installed. It takes aproximetly 1 minute.
+7. Or execute `npm start` if packages are installed. It takes aproximetly 1 minute.
 
 8. You can login with credentials:
 
-    email: *ruben@ruben.com*
+    email: `ruben@ruben.com`
 
-    password: *1234*
+    password: `1234`
 
 Be FUN!!
 
