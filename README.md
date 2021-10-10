@@ -10,7 +10,7 @@ Java jdk 11.
 
 ##To initialize proyect:
 Clone repository.
-Import import.sql file to MySQL.
+Import import.sql from path backend/ file to MySQL.
 Create file aplication.properties using aplication.properties.model.txt schema.
 Place there your MySql credentials.
 On root path execute npm i,
