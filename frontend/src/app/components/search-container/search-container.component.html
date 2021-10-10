@@ -1,0 +1,56 @@
+<div class="container-index">
+  <!--   (keyup)="filterProducts()" -->
+  <form class="container-index__form" #userForm="ngForm">
+    <h4>Búsqueda</h4>
+    <div class="container-index__form--search-div">
+      <div class="search-bar">
+        <input
+          type="email"
+          [(ngModel)]="word"
+          name="email"
+          #email="ngModel"
+        />
+        <img src="{{ searchIcon }}" alt="login Icon" />
+      </div>
+    </div>
+  </form>
+    <div class="container-index__categories-list-container">
+       <ul class="categories-list-container__ul">
+      <li class="categories-list-container__li"><a href="">Categoria Anterior</a></li>
+      <li class="categories-list-container__li"><a href="" class="selected">Categoria Actual</a></li>
+      <ul class="categories-list-container__sub-ul">
+        <li class="categories-list-container__sub-li"><a href="" class="selected">Sub-Categoria Actual</a></li>
+        <li class="categories-list-container__sub-li"><a href="">Sub-Categoria</a></li>
+      </ul>
+      <li class="categories-list-container__li"><a href="">Categoria Siguiente</a></li>
+      <li class="categories-list-container__li"><a href="">Útlima Categoría</a></li>
+      <li class="categories-list-container__li"><a href="">Categoria Siguiente</a></li>
+    </ul>
+    </div>
+   
+  
+</div>
+<div *ngIf="products" class="container-products">
+  <div *ngFor="let product of products" class="container-products-card">
+    <div  class="container-products-card__content">
+      <h6>{{product.name}}</h6>
+      <div class="card__product-div-image">
+        <div class="dark"></div>
+        <img src={{product.imageurl}} alt={{product.name}}>
+        
+      </div>
+      <div class="card__product-div-info">
+        <p>{{product.description}}</p>
+        <p>{{product.price}} €</p>
+        <div class="card__hidden-info">
+          <p class="id">{{product.product_id}}</p>
+          <p class="category">{{product.category}}</p>
+          <p class="sub-category">{{product.subCategory}}</p>
+          
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+
+</div>

@@ -1,0 +1,202 @@
+.container-index{
+    position:fixed;
+    top:20vh;
+    left:5vw;
+    width: 20vw;
+    height: 70vh;
+    border: solid 3px rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-index__form{
+    width: 100%;
+    height: 25%;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container-index__form h4{
+    color: rgba(255,255,255,0.6);
+    width: 80%;
+}
+.search-bar{
+width: 100%;
+height: 100%;
+justify-content: center;
+display: flex;
+position: static;
+border-radius: 10px;
+border: solid 3px rgba(255,255,255,0.3);
+box-sizing: border-box;
+padding: 5px;
+margin: 0;
+}
+.search-bar input{
+background-color: transparent;
+border: none;
+outline: none;
+color: white;
+}
+.container-index__categories-list-container{
+    width: 100%;
+    height: 75%;
+    margin-top: 0;
+    position: static;
+    display: flex;
+    justify-content: center;
+}
+.categories-list-container__ul {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.categories-list-container__li a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.6);
+}
+.categories-list-container__sub-ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.categories-list-container__sub-li a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.6);
+}
+.selected{
+    color:white !important;
+}
+.container-products{
+    
+    position: absolute;
+    top: 15vh;
+    left: 30vw;
+    width: 75vw;
+    min-height:45vh;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: none;
+
+}
+.container-products::-webkit-scrollbar-thumb {
+    background-image: radial-gradient(circle, #7f7d7d, #7a7878, #767373, #716f6f, #6d6a6a, #6c696a, #6b6969, #6a6869, #6c6b6c, #6f6e6f, #717171, #747474);
+    border-radius: 20px;   
+    border: 1px solid white;   
+    
+  }
+  .container-products::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  .container-products::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.2); 
+           /* color of the tracking area */
+  }
+
+
+.container-products-card{
+    box-sizing: border-box;
+    width: 220px;
+    margin-right: 2%;
+    display:inline-block;
+    height: 50vh;
+    overflow-y: hidden;
+
+    
+}
+
+.container-products-card:hover{
+   transform: scale(1.1);
+   transition: all 0.6s;
+   cursor: pointer;
+    
+}
+.container-products-card:not(:hover){
+    transform: scale(1);
+   transition: all 0.6s;
+}
+.container-products-card__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    
+}
+.container-products-card h6{
+  color: rgba(255,255,255,0.6);
+  height: 10%;
+  
+}
+.card__product-div-image{
+    width: 90%;
+    border-radius: 12px;
+    
+    height: 35%;
+    border: solid 2px rgba(255,255,255,0.6);
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+   
+}
+.dark{
+    background:rgba(0,0,0,0.3);
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+}
+.dark:hover{
+    background: transparent;
+    transition: all 0.6s;
+    
+    
+}
+.dark:not(:hover){
+    background:rgba(0,0,0,0.3);
+    transition: all 0.6s;
+    
+}
+.card__product-div-image img{
+   min-width: 100%;
+   min-height: 100%;
+    object-fit: cover;
+}
+.card__product-div-info{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+
+}
+.card__product-div-info p{
+    color: rgba(255,255,255,0.6);
+    max-width: 100%;
+    white-space: normal;
+    min-height: 65%;
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+    
+    margin: 0;
+    
+    
+}
+.card__hidden-info{
+    display: none !important;
+}

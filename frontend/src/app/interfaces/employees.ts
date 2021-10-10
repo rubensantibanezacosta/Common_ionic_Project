@@ -1,5 +1,6 @@
 export interface Employees {
-    imageUrl: String;
+    employee_id:number;
+    imageurl: String;
     alt: String;
     name: String;
     job:string;

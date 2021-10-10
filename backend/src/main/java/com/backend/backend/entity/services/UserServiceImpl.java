@@ -9,6 +9,7 @@ import com.backend.backend.entity.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 @Service
 public class UserServiceImpl implements IUserService {
 	
@@ -18,6 +19,7 @@ public class UserServiceImpl implements IUserService {
 	@Override
 	public List<User> getAll() {
 		return (List<User>) iUsersDao.findAll();
+		
 	}
 
 	@Override

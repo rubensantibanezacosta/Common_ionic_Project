@@ -19,21 +19,25 @@ public class Product implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 
     int product_id;
-    String imageurl;
     String name;
+    String imageurl;
     String description;
     float price;
+    String categoria;
+    String subcategoria;
 
 
     public Product() {
     }
 
-    public Product(int product_id, String imageurl, String name, String description, float price) {
+    public Product(int product_id, String name, String imageurl, String description, float price, String categoria, String subcategoria) {
         this.product_id = product_id;
-        this.imageurl = imageurl;
         this.name = name;
+        this.imageurl = imageurl;
         this.description = description;
         this.price = price;
+        this.categoria = categoria;
+        this.subcategoria = subcategoria;
     }
 
     public int getProduct_id() {
@@ -44,20 +48,20 @@ public class Product implements Serializable{
         this.product_id = product_id;
     }
 
-    public String getImageurl() {
-        return this.imageurl;
-    }
-
-    public void setImageurl(String imageurl) {
-        this.imageurl = imageurl;
-    }
-
     public String getName() {
         return this.name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getImageurl() {
+        return this.imageurl;
+    }
+
+    public void setImageurl(String imageurl) {
+        this.imageurl = imageurl;
     }
 
     public String getDescription() {
@@ -76,18 +80,34 @@ public class Product implements Serializable{
         this.price = price;
     }
 
+    public String getCategoria() {
+        return this.categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public String getSubcategoria() {
+        return this.subcategoria;
+    }
+
+    public void setSubcategoria(String subcategoria) {
+        this.subcategoria = subcategoria;
+    }
+
     public Product product_id(int product_id) {
         setProduct_id(product_id);
         return this;
     }
 
-    public Product imageurl(String imageurl) {
-        setImageurl(imageurl);
+    public Product name(String name) {
+        setName(name);
         return this;
     }
 
-    public Product name(String name) {
-        setName(name);
+    public Product imageurl(String imageurl) {
+        setImageurl(imageurl);
         return this;
     }
 
@@ -101,6 +121,13 @@ public class Product implements Serializable{
         return this;
     }
 
+    public Product categoria(String categoria) {
+        setCategoria(categoria);
+        return this;
+    }
 
-
+    public Product subcategoria(String subcategoria) {
+        setSubcategoria(subcategoria);
+        return this;
+    } 
 }

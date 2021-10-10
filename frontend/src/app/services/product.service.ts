@@ -1,19 +1,19 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Employees } from '../interfaces/employees';
- 
+import { Product } from '../clases/product';
+
+
 @Injectable({
   providedIn: 'root'
 })
-export class EmployeesService {
-  endpoint = 'http://localhost:8080/employees';
+export class ProductService {
+  endpoint = 'http://localhost:8080/products';
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
   constructor(private httpClient: HttpClient) { }
-  getEmployees(): Observable<Employees[]> {
-    return this.httpClient.get<Employees[]>(this.endpoint)
-      
-  } 
+  getProducts(): Observable<Product[]> {
+    return this.httpClient.get<Product[]>(this.endpoint)
+  }
 }

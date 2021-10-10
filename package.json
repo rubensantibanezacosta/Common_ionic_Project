@@ -4,13 +4,13 @@
   "description": "Student project with Spring, Ionic, and MySQL",
   "main": "index.js",
   "scripts": {
-    "tab:init-json-server": "ttab json-server './fakeServer.json'",
     "tab:npm-i": "ttab -d frontend/ npm i",
     "tab:serve": "ttab -d frontend/ ionic serve",
-    "update-packages":"ttab npm i && npm run tab:npm-i",
-    "start": "run-s tab:init-json-server tab:serve",
-    "update-launch":"npm run update-packages| sleep 30; npm run start"
-    
+    "tab:mnv-i":"ttab -d backend/ mnv install| sleep 40; mvn spring-boot:run ",
+    "tab:mvn-run":"ttab -d backend/ mvn spring-boot:run ",
+    "update-packages": "npm run tab:npm-i && tab:mnv-i",
+    "start": "run-s tab:init-json-server tab:serve && tab:mvn-run",
+    "update-launch": "npm run update-packages| sleep 30; npm run start"
   },
   "keywords": [
     "Spring",
@@ -22,6 +22,7 @@
   "license": "ISC",
   "dependencies": {
     "npm-run-all": "^4.1.5",
+    "sweetalert2": "^11.1.7",
     "ttab": "^0.7.1"
   }
 }

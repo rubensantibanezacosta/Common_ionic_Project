@@ -63,16 +63,18 @@ export class SlideshowComponent implements OnInit {
     const arrow:HTMLObjectElement=document.querySelector(`#${arrowId}`);
     arrow.style.transform="scale(0.8,0.8)";
     const divContainer:HTMLObjectElement=document.querySelector(".carousel-list");
+    divContainer.style.transition="0s";
     divContainer.style.opacity="0";
-    divContainer.style.transition="0.2s";
+    
     
   }
   unClikedArrow(arrowId:String) {
     const arrow:HTMLObjectElement=document.querySelector(`#${arrowId}`);
     arrow.style.transform="scale(1,1)";
     const divContainer:HTMLObjectElement=document.querySelector(".carousel-list");
+    divContainer.style.transition="1.2s";
     divContainer.style.opacity="1";
-    divContainer.style.transition="0.6s";
+    
   }
 }
 

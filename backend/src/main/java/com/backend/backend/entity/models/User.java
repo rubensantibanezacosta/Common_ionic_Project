@@ -14,15 +14,18 @@ public class User implements Serializable {
 	
 	@Id
 	String email;
-
 	String name;
 	String password;
 	String access;
 	
 	
 
+
+
+
 	public User() {
 	}
+	
 
 	public User(String email, String name, String password, String access) {
 		this.email = email;

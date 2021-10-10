@@ -7,13 +7,14 @@ import { RouterModule } from '@angular/router';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { ButtonComponent } from './button/button.component';
+import { SearchContainerComponent } from './search-container/search-container.component';
 
 
 
 
 
 @NgModule({
-  declarations: [NavbarComponent,SlideshowComponent, LoginFormComponent, ButtonComponent],
+  declarations: [NavbarComponent,SlideshowComponent, LoginFormComponent, ButtonComponent, SearchContainerComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -21,6 +22,6 @@ import { ButtonComponent } from './button/button.component';
     RouterModule,
     
   ],
-  exports:[NavbarComponent, SlideshowComponent, LoginFormComponent, ButtonComponent]
+  exports:[NavbarComponent, SlideshowComponent, LoginFormComponent, ButtonComponent, SearchContainerComponent]
 })
 export class ComponentsModule { }
