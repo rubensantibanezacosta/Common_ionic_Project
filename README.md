@@ -16,8 +16,9 @@ create file aplication.properties using aplication.properties.model.txt schema.
 Place there your MySql credentials.
 then execute npm run update-launch to install packages and launch project
 or execute npm start if packages are installed.
+It demorates aproximetly 1 minute.
 
-FUN!!
+Be FUN!!
 
 
 
