@@ -8,15 +8,20 @@ Maven,
 Mysql,
 Java jdk 11.
 
-##To initialize proyect
-Clone repositoy
-On root path execute npm i,
-import import.sql file to MySQL,
-create file aplication.properties using aplication.properties.model.txt schema.
+##To initialize proyect:
+Clone repository.
+Import import.sql file to MySQL.
+Create file aplication.properties using aplication.properties.model.txt schema.
 Place there your MySql credentials.
-then execute npm run update-launch to install packages and launch project
+On root path execute npm i,
+Then execute npm run update-launch to install packages and launch the project.
 or execute npm start if packages are installed.
 It demorates aproximetly 1 minute.
+
+You can login with credentials:
+
+ruben@ruben.com
+1234
 
 Be FUN!!
 
