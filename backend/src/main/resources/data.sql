@@ -27,6 +27,7 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `employees`
 --
+CREATE DATABASE Common;
 
 CREATE TABLE `employees` (
   `employee_id` int NOT NULL,

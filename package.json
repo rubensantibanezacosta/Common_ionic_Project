@@ -9,7 +9,7 @@
     "tab:mnv-i":"ttab -d backend/ mnv install| sleep 40; mvn spring-boot:run ",
     "tab:mvn-run":"ttab -d backend/ mvn spring-boot:run ",
     "update-packages": "npm run tab:npm-i && tab:mnv-i",
-    "start": "run-s tab:init-json-server tab:serve && tab:mvn-run",
+    "start": "run-s tab:serve && tab:mvn-run",
     "update-launch": "npm run update-packages| sleep 30; npm run start"
   },
   "keywords": [
