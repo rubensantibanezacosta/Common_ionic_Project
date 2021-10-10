@@ -4,11 +4,11 @@
   "description": "Student project with Spring, Ionic, and MySQL",
   "main": "index.js",
   "scripts": {
-    "tab:npm-i": "ttab -d frontend/ npm i|sleep 40; ionic serve",
+    "tab:npm-i": "ttab -d frontend/ npm i",
     "tab:serve": "ttab -d frontend/ ionic serve",
     "tab:mnv-i":"ttab -d backend/ mnv install| sleep 40; mvn spring-boot:run ",
     "tab:mvn-run":"ttab -d backend/ mvn spring-boot:run ",
-    "update-packages": "npm run-s tab:npm-i && tab:mnv-i",
+    "update-packages": "npm run tab:npm-i && tab:mnv-i",
     "start": "run-s tab:serve && tab:mvn-run",
     "update-launch": "npm run update-packages| sleep 30; npm run start"
   },
