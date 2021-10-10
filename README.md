@@ -1,3 +1,19 @@
+##COMMON IONIC SPRING MYSQL PROJECT
+
+##REQUIREMENTS
+Node.js,
+Maven,
+Mysql,
+Java jdk 11.
+
+##To initialize proyect
+Clone repositoy
+On root path execute npm i,
+import import.sql file to MySQL,
+then execute npm run update-launch to install packages and launch project
+or execute npm start if packages are installed.
+
+
 
 ##POSTMAN requests in CommonProyect
 #GET
