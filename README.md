@@ -3,10 +3,14 @@
 This is a early simulation of a E-shop.
 
 ##REQUIREMENTS
-Node.js,
-Maven,
-Mysql,
-Java jdk 11.
+
+-Node.js
+
+-Maven
+
+-Mysql
+
+-Java jdk 11.
 
 ##To initialize proyect:
 
