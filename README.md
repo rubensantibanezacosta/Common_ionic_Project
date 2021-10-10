@@ -1,5 +1,7 @@
 ##COMMON IONIC SPRING MYSQL PROJECT
 
+This is a early simulation of a E-shop.
+
 ##REQUIREMENTS
 Node.js,
 Maven,
@@ -10,12 +12,16 @@ Java jdk 11.
 Clone repositoy
 On root path execute npm i,
 import import.sql file to MySQL,
+create file aplication.properties using aplication.properties.model.txt schema.
+Place there your MySql credentials.
 then execute npm run update-launch to install packages and launch project
 or execute npm start if packages are installed.
 
+FUN!!
 
 
-##POSTMAN requests in CommonProyect
+
+##POSTMAN requests in CommonProyect to backend
 #GET
 users
 http://localhost:8080/users/
