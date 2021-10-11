@@ -13,6 +13,7 @@
     align-items: stretch;
     padding: 0;
     box-sizing: border-box;
+    
 }
 .container-index__form{
     width: 100%;
@@ -87,10 +88,11 @@ color: white;
     top: 15vh;
     left: 30vw;
     width: 75vw;
-    min-height:45vh;
+    height:35vh;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: none;
+    border-bottom: 3px solid rgba(255,255,255,0.1);  
 
 }
 .container-products::-webkit-scrollbar-thumb {
@@ -142,6 +144,7 @@ color: white;
 .container-products-card h6{
   color: rgba(255,255,255,0.6);
   height: 10%;
+  transform: translateY(5px);
   
 }
 .card__product-div-image{
