@@ -35,6 +35,7 @@ export class NavbarComponent implements OnInit {
   async Refresh() {
   }
 
+
   public logout(): void {
 
     let timerInterval;

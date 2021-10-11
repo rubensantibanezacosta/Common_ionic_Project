@@ -1,7 +1,32 @@
 
-body{
+ .ion-page{
     background: linear-gradient(180deg, #292323 0%, rgba(41, 35, 35, 0.75) 50.52%, #292323 100%), #FFFFFF;
-    display: flex;
-    justify-content: center;
+    position: static !important;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: visible !important;
     
+  }
+
+  .ion-page::-webkit-scrollbar-thumb {
+    background:transparent;
+  }
+  .ion-page::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
+  
+  .ion-page::-webkit-scrollbar-track {
+    background: transparent; 
+           /* color of the tracking area */
+  }
+  .overflow{
+    overflow-y: scroll !important;
+  }
+  .router{
+    display: block;
+    position: absolute;
   }

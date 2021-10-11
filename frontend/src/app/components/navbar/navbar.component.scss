@@ -4,13 +4,14 @@
     right: 0;
     top: 0;
     height: 15%;
+  
     
   }
   .navbar__logo-container{
     width:50%;
   }
   .navbar__ul-container{
-    width: 50%;
+    width: 60%;
   }
   .navbar__ul {
     display: flex;
@@ -29,14 +30,14 @@
   justify-content: center;
   align-items: center;
   }
-  .navbar__ul a:hover {
-    color: white;
-    text-shadow: 1px 1px 2px black;
+  .item_a:hover {
+    color: white !important;
+    text-shadow: 1px 1px 5px black;
     transition: 0.6s;
+    transform: scale(1.1);
   }
 
-
-  .navbar__ul a:not(:hover) {
+  .item_a:not(:hover) {
     transition: 0.3s;
   }
   
@@ -53,11 +54,6 @@
    
   }
   
-  .navbar__ul--li-badge{
-    position: absolute;
-    top: 45%;
-  }
-  
   .navbar__logo-container--logo{
     position:fixed;
     left: 20px;
@@ -65,11 +61,44 @@
   }
   
  
-  .navbar__ul--li__img img{
+  .profile_icon_a img{
     width: 28px;
+    display: flex;
   }
 
   .icon{
     width: 28px;
     cursor: pointer;
   }
+  
+  .profile_icon_a{
+    border-radius: 12px;
+    border:solid 3px white;
+    margin-right:15px ;
+    width: 50px !important;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+  .profile_icon_a:hover{
+    box-shadow: 10px 10px 5px black;
+    transform: scale(1.2) rotateZ(360deg) translateY(-3px);
+    transition: all 0.6s;
+    
+    
+}
+.profile_icon_a:not(:hover){
+    box-shadow: 0px 0px 0px black;
+    transform: scale(1) rotateZ(0deg);
+    transition: all 0.6s;
+    
+}
+ion-badge{
+  transform: translateX(26px);
+  position: absolute;
+  background-color: yellow;
+
+}

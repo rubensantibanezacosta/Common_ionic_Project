@@ -4,33 +4,45 @@
   </div>
   <div class="navbar__ul-container">
     <ul class="navbar__ul">
-      <a routerLink="/products"><li class="navbar__ul--li">Productos</li></a>
-      <a routerLink="/contact"><li class="navbar__ul--li">Contacto</li></a>
-      <a routerLink="/company"><li class="navbar__ul--li">Conócenos</li></a>
-      <a *ngIf="miToken == 0" routerLink="/login">
+      <a id="item1" class="item_a" routerLink="/products"
+        ><li class="navbar__ul--li">Productos</li></a
+      >
+      <a id="item2" class="item_a" routerLink="/contact"
+        ><li class="navbar__ul--li">Contacto</li></a
+      >
+      <a id="item3" class="item_a" routerLink="/company"
+        ><li class="navbar__ul--li">Conócenos</li></a
+      >
+      <a id="item4" class="item_a" *ngIf="miToken == 0" routerLink="/login">
         <li class="navbar__ul--li">
           <p>Iniciar sesión</p>
         </li>
       </a>
-      <a  *ngIf="miToken != 0">
-        <li class="navbar__ul--li__logout">
-          <img routerLink="#" class="icon"  src="{{userIcon}}" alt="{{ userName }}">
-        </li>
-        </a>
-        <a *ngIf="miToken != 0">
+      <a id="item5" class="profile_icon_a" *ngIf="miToken != 0">
         <li class="navbar__ul--li__img">
-          <img src="{{ logOutIcon }}" alt="logout" (click)="logout()" class="icon"/>
+          <img
+            routerLink="#"
+            class="icon"
+            src="{{ userIcon }}"
+            alt="{{ userName }}"
+          />
         </li>
       </a>
-      <a routerLink="#"
-        ><li class="navbar__ul--li">
+      <a id="item6" class="profile_icon_a" *ngIf="miToken != 0">
+        <li class="navbar__ul--li__img" (click)="logout()">
+          <img src="{{ logOutIcon }}" alt="logout" class="icon" />
+        </li>
+      </a>
+      <a id="item7" class="profile_icon_a" routerLink="#"
+        ><li class="navbar__ul--li__img">
           <img
             src="{{ cartImage }}"
             alt="cartImage"
             class="navbar__ul--li-img"
-          /><ion-badge class="navbar__ul--li-badge" color="light">0</ion-badge>
-        </li></a
-      >
+          />
+         <ion-badge color="light" align="center">0</ion-badge> 
+        </li>
+      </a>
     </ul>
   </div>
 </nav>

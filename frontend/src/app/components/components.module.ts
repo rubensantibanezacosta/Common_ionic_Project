@@ -9,13 +9,14 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { ButtonComponent } from './button/button.component';
 import { SearchContainerComponent } from './search-container/search-container.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
 
 
 @NgModule({
-  declarations: [NavbarComponent,SlideshowComponent, LoginFormComponent, ButtonComponent, SearchContainerComponent, ContactFormComponent],
+  declarations: [NavbarComponent,SlideshowComponent, LoginFormComponent, ButtonComponent, SearchContainerComponent, ContactFormComponent, FooterComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -23,6 +24,6 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     RouterModule,
     
   ],
-  exports:[NavbarComponent, SlideshowComponent, LoginFormComponent, ButtonComponent, SearchContainerComponent,ContactFormComponent]
+  exports:[NavbarComponent, SlideshowComponent, LoginFormComponent, ButtonComponent, SearchContainerComponent,ContactFormComponent, FooterComponent]
 })
 export class ComponentsModule { }
