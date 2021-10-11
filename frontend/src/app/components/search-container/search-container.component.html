@@ -51,6 +51,26 @@
       </div>
     </div>
   </div> 
-  
-
+</div>
+<div *ngIf="products" class="container-products">
+  <div *ngFor="let product of products" class="container-products-card">
+    <div  class="container-products-card__content">
+      <h6>{{product.name}}</h6>
+      <div class="card__product-div-image">
+        <div class="dark"></div>
+        <img src={{product.imageurl}} alt={{product.name}}>
+        
+      </div>
+      <div class="card__product-div-info">
+        <p>{{product.description}}</p>
+        <p>{{product.price}} €</p>
+        <div class="card__hidden-info">
+          <p class="id">{{product.product_id}}</p>
+          <p class="category">{{product.category}}</p>
+          <p class="sub-category">{{product.subCategory}}</p>
+          
+        </div>
+      </div>
+    </div>
+  </div> 
 </div>
