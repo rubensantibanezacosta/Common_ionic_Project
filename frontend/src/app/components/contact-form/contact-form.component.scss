@@ -1,0 +1,136 @@
+#contenedor-form {
+  display: flex;
+  position: absolute;
+  top: 15%;
+  width: 50vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+#contenedor-form form {
+  width: 70%;
+  height: 90%;
+  border: solid 3px rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+}
+#contenedor-form form div {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#contenedor-form form div label {
+  width: 100%;
+  padding-bottom: 5%;
+  color: rgba(255, 255, 255, 0.6);
+}
+#contenedor-form form div input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  color: rgb(255, 255, 255);
+  margin-bottom: 5%;
+}
+#contenedor-form form div textarea {
+  width: 100%;
+  height: 120px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 5%;
+  resize: none;
+  overflow-y: auto;
+}
+#contenedor-form form div textarea::-webkit-scrollbar-thumb {
+  background-image: radial-gradient(
+    circle,
+    #7f7d7d,
+    #7a7878,
+    #767373,
+    #716f6f,
+    #6d6a6a,
+    #6c696a,
+    #6b6969,
+    #6a6869,
+    #6c6b6c,
+    #6f6e6f,
+    #717171,
+    #747474
+  );
+  border-radius: 20px;
+  border: 1px solid white;
+}
+#contenedor-form form div textarea::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+#contenedor-form form div textarea::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+
+  /* color of the tracking area */
+}
+
+.warn {
+  width: 120px !important;
+  height: 30px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: rgba(196, 0, 0, 0.644) !important;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 25%;
+  left: 100%;
+  background: rgba(255, 166, 0, 0.644) !important;
+  color: black !important;
+  border-radius:  20px  !important;
+  border: solid white 1px;
+  transition: all 0.6s !important;
+  font-size: 0.7rem;
+  box-shadow: 2px 2px 5px black;
+}
+.warn div {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: black !important;
+  height: 100% !important;
+  position: absolute !important;
+  width: 100% !important;
+  margin: 0 !important;
+  font-size: 0.7rem;
+}
+.input-div {
+  position: relative;
+  padding: 0;
+}
+#contenedor-form button {
+  width: 200px;
+  height: 50px;
+  background: rgba(12, 106, 174, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  color: white;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contenedor-form button img {
+  width: 28px;
+}

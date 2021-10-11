@@ -1,0 +1,39 @@
+<div id="contenedor-form">
+  <form (ngSubmit)="submit()" #userForm="ngForm">
+    <h3>Contáctanos</h3>
+    <div class="input-div">
+      <label for="name">Nombre</label>
+      <input type="name" [(ngModel)]="contactInfo.name" name="email" #name="ngModel" required maxlength="200" autocomplete="name"/>
+      <div *ngIf="name.invalid && name.dirty">
+        <div class="warn" *ngIf="name.errors?.required">Campo requerido</div>
+      </div>
+    </div>
+    <div class="input-div">
+      <label for="mail">Email</label>
+      <input type="mail" [(ngModel)]="contactInfo.mail" name="mail" #mail="ngModel" required minlength="4"
+        maxlength="200" />
+
+      <div class="warn" *ngIf="mail.invalid && mail.dirty">
+        <div *ngIf="mail.errors?.required">Email requerido</div>
+        <div *ngIf="mail.errors?.minlength">Mínimo 4 caracteres</div>
+        <div *ngIf="mail.errors?.maxlength">Máximo 200 caracteres</div>
+      </div>
+    </div>
+    <div class="input-div">
+      <label for="content">Asunto</label>
+      <textarea type="textField" [(ngModel)]="contactInfo.content" name="content" #content="ngModel" required
+        minlength="4" maxlength="1000"></textarea>
+
+      <div class="warn" *ngIf="content.invalid && content.dirty">
+        <div *ngIf="content.errors?.required">Asunto requerido</div>
+        <div *ngIf="content.errors?.minlength">Mínimo 4 caracteres</div>
+        <div *ngIf="content.errors?.maxlength">Máximo 1000 caracteres</div>
+      </div>
+
+    </div>
+    <button type="submit" [disabled]="!userForm.form.valid">
+      <p>Enviar</p>
+      <img src="{{ mailIcon }}" alt="mail Icon" />
+    </button>
+  </form>
+</div>

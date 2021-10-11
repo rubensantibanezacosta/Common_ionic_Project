@@ -8,13 +8,14 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { ButtonComponent } from './button/button.component';
 import { SearchContainerComponent } from './search-container/search-container.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 
 
 
 
 @NgModule({
-  declarations: [NavbarComponent,SlideshowComponent, LoginFormComponent, ButtonComponent, SearchContainerComponent],
+  declarations: [NavbarComponent,SlideshowComponent, LoginFormComponent, ButtonComponent, SearchContainerComponent, ContactFormComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -22,6 +23,6 @@ import { SearchContainerComponent } from './search-container/search-container.co
     RouterModule,
     
   ],
-  exports:[NavbarComponent, SlideshowComponent, LoginFormComponent, ButtonComponent, SearchContainerComponent]
+  exports:[NavbarComponent, SlideshowComponent, LoginFormComponent, ButtonComponent, SearchContainerComponent,ContactFormComponent]
 })
 export class ComponentsModule { }

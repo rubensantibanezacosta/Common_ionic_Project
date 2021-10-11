@@ -22,7 +22,6 @@ export class LoginFormComponent implements OnInit {
   public submit(): void {
     this.loginService.login(this.user).subscribe(
       (data: String) => {
-        let timerInterval;
         Swal.fire({
           title: 'Iniciando Sesión!',
           timer: 1000,

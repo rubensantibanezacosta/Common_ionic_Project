@@ -16,10 +16,12 @@ export class NavbarComponent implements OnInit {
   public logo = "/assets/icon/Logo.png";
   public loginIcon = "../../../assets/icon/log-in.png";
   public logOutIcon = "../../../assets/icon/log-out.png";
+  public userIcon='../../../assets/icon/user-icon.png';
   constructor(private router: Router) {
 
     this.miToken = 0;
     this.userName = "";
+    
   }
 
   ngOnInit(): void {

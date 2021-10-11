@@ -12,9 +12,9 @@
           <p>Iniciar sesión</p>
         </li>
       </a>
-      <a *ngIf="miToken != 0">
+      <a routerLink="#" *ngIf="miToken != 0">
         <li class="navbar__ul--li__logout">
-          {{ userName }}
+          <img src="{{userIcon}}" alt="{{ userName }}">
         </li>
         </a>
         <a *ngIf="miToken != 0" routerLink="/login">
