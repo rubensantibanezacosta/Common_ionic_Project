@@ -10,30 +10,21 @@
     </div>
   </form>
   <div class="container-index__categories-list-container">
-    
-<p>Filtrar por Categoría</p>
-<select name="categorias" id="categorias">
-  <option value="">...</option>
-  <option value="Electronica">Electrónica</option>
-  <option value="Hogar">Hogar</option>
-  <option value="Alimentación">Alimentación</option>
-</select>
-<p>Sub-Categoría</p>
-<select  name="" id="subcategorias">
-  <option value="">...</option>
-  <option value=""></option>
-  <option value=""></option>
-  <option value=""></option>
-  
-</select>
+    <p>Filtrar por Categoría</p>
+    <select [ngModel]="selectedCategory" #select *ngIf="products" name="categories" id="categories" (change)="recognizeSubCategoriesByCategory(select.value)">
+      <option  *ngFor="let categoria of categories" value="{{categoria}}">{{categoria}}</option>
+    </select>
 
 
-
+    <p>Sub-Categoría</p>
+    <select *ngIf="products" name="subcategories" id="subcategories">
+      <option  *ngFor="let subcategoria of subcategories"  value="{{subcategoria}}">{{subcategoria}}</option>
+     
+    </select>
   </div>
 </div>
 
 <div class="main-products">
-  
   <div *ngIf="products" class="container-products">
     <div class="main-products__category">
       <div class="main-products__category--tittle"><div>HOGAR</div></div>
@@ -50,109 +41,8 @@
           <p>{{ product.price }} €</p>
           <div class="card__hidden-info">
             <p class="id">{{ product.product_id }}</p>
-            <p class="category">{{ product.category }}</p>
-            <p class="sub-category">{{ product.subCategory }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div *ngIf="products" class="container-products">
-    <div class="main-products__category">
-      <div class="main-products__category--tittle"><div>HOGAR</div></div>
-    </div>
-    <div *ngFor="let product of products" class="container-products-card">
-      <div class="container-products-card__content">
-        <h6>{{ product.name }}</h6>
-        <div class="card__product-div-image">
-          <div class="dark"></div>
-          <img src="{{ product.imageurl }}" alt="{{ product.name }}" />
-        </div>
-        <div class="card__product-div-info">
-          <p>{{ product.description }}</p>
-          <p>{{ product.price }} €</p>
-          <div class="card__hidden-info">
-            <p class="id">{{ product.product_id }}</p>
-            <p class="category">{{ product.category }}</p>
-            <p class="sub-category">{{ product.subCategory }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div *ngFor="let product of products" class="container-products-card">
-      <div class="container-products-card__content">
-        <h6>{{ product.name }}</h6>
-        <div class="card__product-div-image">
-          <div class="dark"></div>
-          <img src="{{ product.imageurl }}" alt="{{ product.name }}" />
-        </div>
-        <div class="card__product-div-info">
-          <p>{{ product.description }}</p>
-          <p>{{ product.price }} €</p>
-          <div class="card__hidden-info">
-            <p class="id">{{ product.product_id }}</p>
-            <p class="category">{{ product.category }}</p>
-            <p class="sub-category">{{ product.subCategory }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div *ngFor="let product of products" class="container-products-card">
-      <div class="container-products-card__content">
-        <h6>{{ product.name }}</h6>
-        <div class="card__product-div-image">
-          <div class="dark"></div>
-          <img src="{{ product.imageurl }}" alt="{{ product.name }}" />
-        </div>
-        <div class="card__product-div-info">
-          <p>{{ product.description }}</p>
-          <p>{{ product.price }} €</p>
-          <div class="card__hidden-info">
-            <p class="id">{{ product.product_id }}</p>
-            <p class="category">{{ product.category }}</p>
-            <p class="sub-category">{{ product.subCategory }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div *ngIf="products" class="container-products">
-    <div class="main-products__category">
-      <div class="main-products__category--tittle"><div>HOGAR</div></div>
-    </div>
-    <div *ngFor="let product of products" class="container-products-card">
-      <div class="container-products-card__content">
-        <h6>{{ product.name }}</h6>
-        <div class="card__product-div-image">
-          <div class="dark"></div>
-          <img src="{{ product.imageurl }}" alt="{{ product.name }}" />
-        </div>
-        <div class="card__product-div-info">
-          <p>{{ product.description }}</p>
-          <p>{{ product.price }} €</p>
-          <div class="card__hidden-info">
-            <p class="id">{{ product.product_id }}</p>
-            <p class="category">{{ product.category }}</p>
-            <p class="sub-category">{{ product.subCategory }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div *ngFor="let product of products" class="container-products-card">
-      <div class="container-products-card__content">
-        <h6>{{ product.name }}</h6>
-        <div class="card__product-div-image">
-          <div class="dark"></div>
-          <img src="{{ product.imageurl }}" alt="{{ product.name }}" />
-        </div>
-        <div class="card__product-div-info">
-          <p>{{ product.description }}</p>
-          <p>{{ product.price }} €</p>
-          <div class="card__hidden-info">
-            <p class="id">{{ product.product_id }}</p>
-            <p class="category">{{ product.category }}</p>
-            <p class="sub-category">{{ product.subCategory }}</p>
+            <p class="category">{{ product.categoria }}</p>
+            <p class="sub-category">{{ product.subcategoria }}</p>
           </div>
         </div>
       </div>

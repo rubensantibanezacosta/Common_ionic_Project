@@ -4,6 +4,6 @@ export class Product {
     imageurl:string;
     description:string;
     price:number;
-    category:string;
-    subCategory:string;
+    categoria:string;
+    subcategoria:string;
 }
