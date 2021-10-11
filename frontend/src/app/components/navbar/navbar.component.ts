@@ -67,7 +67,6 @@ export class NavbarComponent implements OnInit {
             
         }
       } else if (result.dismiss === Swal.DismissReason.cancel) {
-        window.history.back();
       }
     })
   }
