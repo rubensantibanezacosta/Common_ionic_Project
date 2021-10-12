@@ -131,7 +131,9 @@ export class SearchContainerComponent implements OnInit {
       this.filterStateBySubCategories(this.subCategoryForMaintainState);
       this.productsState=this.productsState.filter(
         (product)=>{
-          return product.name.toLowerCase().includes(searchValue.toLowerCase());
+          return product.name.toLowerCase().includes(searchValue.toLowerCase())
+          ||product.description.toLowerCase().includes(searchValue.toLowerCase())
+          ||product.categoria.toLowerCase().includes(searchValue.toLowerCase());
         })
     }else{
       this.productsState=this.products;
