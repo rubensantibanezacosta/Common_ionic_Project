@@ -13,12 +13,13 @@ export class SearchContainerComponent implements OnInit {
   public productsState: Array<Product>;
   public productsFilteredByCategories: Array<Product>;
   public product: Product;
-  public word: string;
+  public word: string="";
   public categories: Array<string> = ["..."];
   public subcategories: Array<string> = ["..."];
   public selectedCategory: string = "";
   public selectedSubCategory: string = "";
   public categoryForMaintainState: string = "";
+  public subCategoryForMaintainState: string="";
   public productGeneralStates: Array<ProductGeneralState> = [];
   public productGeneralState:ProductGeneralState=new ProductGeneralState();
 
@@ -68,28 +69,33 @@ export class SearchContainerComponent implements OnInit {
   }
   async filterStateByCategories(category: string) {
     this.categoryForMaintainState = category;
-    if (category != "...") {
+    if (category != "..."&&category !="") {
       this.productsState = this.products;
       this.productsState = this.productsState.filter((product) => {
         return product.categoria == this.categoryForMaintainState
       })
+      
       this.productsFilteredByCategories = this.productsState;
 
     }
     else {
+      this.categoryForMaintainState = "";
       this.productsState = this.products;
       this.productsFilteredByCategories = this.productsState;
     }
 
   }
   filterStateBySubCategories(subCategory: string) {
-    if (subCategory != "...") {
+    this.subCategoryForMaintainState = subCategory;
+    if (subCategory != "..."&&subCategory !="") {
       this.productsState = this.productsFilteredByCategories;
       this.productsState = this.productsState.filter((product) => {
         return product.subcategoria == subCategory
       })
     } else {
-      this.productsState = this.productsState
+      this.subCategoryForMaintainState = "";
+      this.productsState=this.products;
+      this.filterStateByCategories(this.categoryForMaintainState);
     }
     this.buildGeneralState();
   }
@@ -115,5 +121,23 @@ export class SearchContainerComponent implements OnInit {
       return product.categoria == categoria
     })
 
+  }
+
+  searchProducts(searchValue:string){
+    console.log(searchValue);
+    if (searchValue&&searchValue!=""){
+      this.productsState=this.products;
+      this.filterByCategories(this.categoryForMaintainState);
+      this.filterStateBySubCategories(this.subCategoryForMaintainState);
+      this.productsState=this.productsState.filter(
+        (product)=>{
+          return product.name.toLowerCase().includes(searchValue.toLowerCase());
+        })
+    }else{
+      this.productsState=this.products;
+      this.filterByCategories(this.categoryForMaintainState);
+      this.filterStateBySubCategories(this.subCategoryForMaintainState);
+    }
+    this.buildGeneralState();
   }
 }

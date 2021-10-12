@@ -4,7 +4,7 @@
     <p>Búsqueda...</p>
     <div class="container-index__form--search-div">
       <div class="search-bar">
-        <input type="email" [(ngModel)]="word" name="email" #email="ngModel" />
+        <input type="text" [(ngModel)]="word" name="search" #search="ngModel" (keyup)="searchProducts(search.value)"/>
         <img src="{{ searchIcon }}" alt="login Icon" />
       </div>
     </div>
