@@ -124,7 +124,7 @@ export class SearchContainerComponent implements OnInit {
   }
 
   searchProducts(searchValue:string){
-    console.log(searchValue);
+    
     if (searchValue&&searchValue!=""){
       this.productsState=this.products;
       this.filterByCategories(this.categoryForMaintainState);
