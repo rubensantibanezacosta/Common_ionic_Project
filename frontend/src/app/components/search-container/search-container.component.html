@@ -1,10 +1,15 @@
 <div class="container-index">
-  <!--   (keyup)="filterProducts()" -->
   <form class="container-index__form" #userForm="ngForm">
     <p>Búsqueda...</p>
     <div class="container-index__form--search-div">
       <div class="search-bar">
-        <input type="text" [(ngModel)]="word" name="search" #search="ngModel" (keyup)="searchProducts(search.value)"/>
+        <input
+          type="text"
+          [(ngModel)]="word"
+          name="search"
+          #search="ngModel"
+          (keyup)="searchProducts(search.value)"
+        />
         <img src="{{ searchIcon }}" alt="login Icon" />
       </div>
     </div>
@@ -58,22 +63,13 @@
         class="container-products-card"
         *ngFor="let product of productGeneralState.products"
       >
-        <div
-          class="container-products-card__content"
-          *ngIf="productGeneralState.products"
-        >
+        <div class="container-products-card__content">
           <h6>{{ product.name }}</h6>
-          <div
-            class="card__product-div-image"
-            *ngIf="productGeneralState.products"
-          >
+          <div class="card__product-div-image">
             <div class="dark"></div>
             <img src="{{ product.imageurl }}" alt="{{ product.name }}" />
           </div>
-          <div
-            class="card__product-div-info"
-            *ngIf="productGeneralState.products"
-          >
+          <div class="card__product-div-info">
             <p>{{ product.description }}</p>
             <p>{{ product.price }} €</p>
             <div class="card__hidden-info">

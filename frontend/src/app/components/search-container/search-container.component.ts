@@ -131,9 +131,10 @@ export class SearchContainerComponent implements OnInit {
       this.filterStateBySubCategories(this.subCategoryForMaintainState);
       this.productsState=this.productsState.filter(
         (product)=>{
-          return product.name.toLowerCase().includes(searchValue.toLowerCase())
-          ||product.description.toLowerCase().includes(searchValue.toLowerCase())
-          ||product.categoria.toLowerCase().includes(searchValue.toLowerCase());
+          return product.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(searchValue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
+          ||product.description.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(searchValue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
+          ||product.categoria.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(searchValue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
+          ||product.subcategoria.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(searchValue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""));
         })
     }else{
       this.productsState=this.products;

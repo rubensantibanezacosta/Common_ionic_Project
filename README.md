@@ -16,7 +16,7 @@ This is a early simulation of a E-shop.
 
 1. Clone repository.
 
-2. Import import.sql from path backend/ file to MySQL.
+2. Import import.sql file  from path backend/ to MySQL.
 
 3. Create file `aplication.properties` using `aplication.properties.model.txt` schema.
 
