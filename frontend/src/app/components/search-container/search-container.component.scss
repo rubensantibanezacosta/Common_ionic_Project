@@ -259,13 +259,15 @@ height: 25px;
   
 }
 .card__product-div-image{
-    width: 90%;
+    
     border-radius: 12px;
     height: 35%;
     border: solid 2px rgba(255,255,255,0.6);
     overflow: hidden;
     object-fit: cover;
     position: relative;
+    display: flex;
+    justify-content: center;
    
 }
 .dark{
@@ -286,8 +288,7 @@ height: 25px;
     
 }
 .card__product-div-image img{
-   min-width: 100%;
-   min-height: 100%;
+   max-height: 100%;
     object-fit: cover;
 }
 .card__product-div-info{
@@ -299,13 +300,11 @@ height: 25px;
 }
 .card__product-div-info p{
     color: rgba(255,255,255,0.6);
-    max-width: 100%;
     white-space: normal;
     min-height: 65%;
     display: flex;
     align-items: center;
     padding-top: 2px;
-    
     margin: 0;
     
     
