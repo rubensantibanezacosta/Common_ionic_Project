@@ -8,6 +8,8 @@ This is a early simulation of a E-shop.
 
 -Node.js
 
+-Npm
+
 -Maven (Remember that on Windows you have to configure your path variable &quot;MAVEN\_HOME&quot;)
 
 -Mysql
