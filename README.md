@@ -48,7 +48,7 @@ With Administrator privilleges:
 
 - Then execute `npm run w:install` to install packages.
 
-- Or execute `npm run w_launch` if packages are installed to launch the project.
+- Or execute `npm run w:launch` if packages are installed to launch the project.
 
 - It takes aproximetly 1 minute.
 
