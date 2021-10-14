@@ -44,11 +44,7 @@ With Administrator privilleges:
 
 ### ​ON WINDOWS
 
-- On root path execute `npm update`
-
-- On root path execute `npm i`
-
-- Then execute `npm run w:install` to install packages.
+- On root path execute `npm run w:install` to install packages.
 
 - Or execute `npm run w:launch` if packages are installed to launch the project.
 
