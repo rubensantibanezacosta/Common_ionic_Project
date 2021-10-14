@@ -4,6 +4,8 @@
   "description": "Student project with Spring, Ionic, and MySQL",
   "main": "index.js",
   "scripts": {
+    "w:install": "start /D .\\frontend npm i | start /D .\\backend mvn install",
+    "w:launch":"start /D .\\frontend ionic serve | start /D .\\backend mvn spring-boot:run",
     "tab:npm-i": "ttab -d frontend/ npm i",
     "tab:serve": "ttab -d frontend/ ionic serve",
     "tab:mvn-i": "ttab -d backend/ mvn install",
