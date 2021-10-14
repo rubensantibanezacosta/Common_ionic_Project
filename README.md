@@ -1,22 +1,24 @@
-##COMMON IONIC SPRING MYSQL PROJECT
+# ​COMMON IONIC SPRING MYSQL PROJECT
 
 This is a early simulation of a E-shop.
 
-##REQUIREMENTS
+## ​REQUIREMENTS
+
+### ​UBUNTU or WINDOWS
 
 -Node.js
 
--Maven
+-Maven (Remember that on Windows you have to configure your path variable &quot;MAVEN\_HOME&quot;
 
 -Mysql
 
 -Java jdk 11.
 
-##To initialize proyect:
+## ​ **TO INITIALIZE**
 
 1. Clone repository.
 
-2. Import import.sql file  from path backend/ to MySQL.
+2. Import import.sql file from path backend/ to MySQL.
 
 3. Create file `aplication.properties` using `aplication.properties.model.txt` schema.
 
@@ -24,136 +26,204 @@ This is a early simulation of a E-shop.
 
 With Administrator privilleges:
 
-5. On root path execute `npm i`
+### ​ON UBUNTU
 
-6. Then execute `npm run update-launch` to install packages and launch the project.
+### ​
 
-7. Or execute `npm start` if packages are installed. It takes aproximetly 1 minute.
+- On root path execute `npm update`
+
+- On root path execute `npm i`
+
+- Then execute `npm run update-launch` to install packages and launch the project.
+
+- Or execute `npm start` if packages are installed. It takes aproximetly 1 minute.
+
+- It takes aproximetly 1 minute.
+
+### ​ON WINDOWS
+
+- On root path execute `npm update`
+
+- On root path execute `npm i`
+
+- Then execute `npm run w:install` to install packages.
+
+- Or execute `npm run w_launch` if packages are installed to launch the project.
+
+- It takes aproximetly 1 minute.
 
 8. You can login with credentials:
 
-    email: `ruben@ruben.com`
+email: `ruben@ruben.com`
 
-    password: `1234`
+password: `1234`
 
-Be FUN!!
+## ​_Be FUN!!_
 
+## ​POSTMAN requests in CommonProyect to backend
 
-
-
-##POSTMAN requests in CommonProyect to backend
-
-#GET
+### ​GET
 
 users
+
 http://localhost:8080/users/
 
-#POST
+### ​POST
 
 users
+
 http://localhost:8080/users/
 
 Bodyraw (json)
+
 json
+
 {
-  "email": "test2@test.com",
-  "name": "test2",
-  "password": "1234",
-  "access": "user"
+
+&quot;email&quot;: &quot;test2@test.com&quot;,
+
+&quot;name&quot;: &quot;test2&quot;,
+
+&quot;password&quot;: &quot;1234&quot;,
+
+&quot;access&quot;: &quot;user&quot;
+
 }
-#GET
+
+### ​GET
 
 user for email
+
 http://localhost:8080/users/ruben@ruben.com
 
-#PUT
+### ​PUT
 
 user by email
+
 http://localhost:8080/users/test@test.com
 
 Bodyraw (json)
+
 json
+
 {
-  "email": "test@test.com",
-  "name": "test-modified",
-  "password": "",
-  "access": "user"
+
+&quot;email&quot;: &quot;test@test.com&quot;,
+
+&quot;name&quot;: &quot;test-modified&quot;,
+
+&quot;password&quot;: &quot;&quot;,
+
+&quot;access&quot;: &quot;user&quot;
+
 }
-#GET
+
+### ​GET
 
 employees
+
 http://localhost:8080/employees/
 
-
-#GET
+### ​GET
 
 employee for id
+
 http://localhost:8080/employees/2
 
-
-#POST
+### ​POST
 
 employee
+
 http://localhost:8080/employees
 
 Bodyraw (json)
+
 json
+
 {
-  "employee_id": 0,
-  "imageurl": "https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  "name": "Andrea Martín",
-  "job": "Directora de Proyectos"
+
+&quot;employee\_id&quot;: 0,
+
+&quot;imageurl&quot;: &quot;https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500&quot;,
+
+&quot;name&quot;: &quot;Andrea Martín&quot;,
+
+&quot;job&quot;: &quot;Directora de Proyectos&quot;
+
 }
 
-#PUT
+### ​PUT
 
 employee by id
+
 http://localhost:8080/employees/4
 
 Bodyraw (json)
+
 json
+
 {
-  "employee_id": 4,
-  "imageurl": "https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  "name": "Andrea Martínez",
-  "job": "Directora de Proyectos"
+
+&quot;employee\_id&quot;: 4,
+
+&quot;imageurl&quot;: &quot;https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500&quot;,
+
+&quot;name&quot;: &quot;Andrea Martínez&quot;,
+
+&quot;job&quot;: &quot;Directora de Proyectos&quot;
+
 }
 
-#GET
+### ​GET
 
 products
+
 http://localhost:8080/products/
 
-#GET
+### ​GET
 
 products by id
+
 http://localhost:8080/products/1
 
-#POST
+### ​POST
 
 product
+
 http://localhost:8080/products
 
 Bodyraw (json)
+
 json
+
 {
-  "imageurl": "https://images.pexels.com/photos/248412/pexels-photo-248412.jpeg?cs=srgb&dl=pexels-pixabay-248412.jpg&fm=jpg",
-  "name": "Leche Natural",
-  "description": "Leche natural directa de la vaca",
-  "price": 3.5
+
+&quot;imageurl&quot;: &quot;https://images.pexels.com/photos/248412/pexels-photo-248412.jpeg?cs=srgb&amp;dl=pexels-pixabay-248412.jpg&amp;fm=jpg&quot;,
+
+&quot;name&quot;: &quot;Leche Natural&quot;,
+
+&quot;description&quot;: &quot;Leche natural directa de la vaca&quot;,
+
+&quot;price&quot;: 3.5
+
 }
 
-#DEL
+### ​DEL
 
 user
+
 http://localhost:8080/users/test@test.com
 
-#DEL
+### ​
+
+### ​DEL
 
 product by id
+
 http://localhost:8080/products/2
 
-#DEL
+### ​DEL
 
 employee
+
 http://localhost:8080/employees/2

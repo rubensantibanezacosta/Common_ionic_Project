@@ -11,6 +11,12 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "browserslist":[
+    "defaults",
+    "not IE 11"
+  ],
+  
+  
   "private": true,
   "dependencies": {
     "sweetalert2": "^11.1.7",
