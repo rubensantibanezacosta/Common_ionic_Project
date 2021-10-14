@@ -30,8 +30,6 @@ With Administrator privilleges:
 
 ### ​ON UBUNTU
 
-### ​
-
 - On root path execute `npm update`
 
 - On root path execute `npm i`
