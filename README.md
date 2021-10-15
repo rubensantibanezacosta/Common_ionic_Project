@@ -22,9 +22,12 @@ This is a early simulation of a E-shop, using Ionic with Angular for Frontend, a
 
 2. Import import.sql file from path backend/ to MySQL. `backend/import.sql`
 
+
 3. Create file `aplication.properties` using `aplication.properties.model.txt` schema.
 
 4. Place there your MySQL credentials.
+
+Backend runs at port 8080, And Frontend runs default at port 8100.
 
 With Administrator privilleges:
 
