@@ -8,13 +8,13 @@ This is a early simulation of a E-shop, using Ionic with Angular for Frontend, a
 
 -Node.js
 
--Npm
+-NPM
 
 -Maven (Remember that on Windows you have to configure your path variable &quot;MAVEN\_HOME&quot;)
 
--Mysql
+-MySQL or MariaDB
 
--Java jdk 11.
+-JDK 11.
 
 ## ​ **TO INITIALIZE**
 
