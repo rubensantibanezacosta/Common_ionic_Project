@@ -1,6 +1,8 @@
 package com.backend.backend.entity.models;
 
-public class ContactInfo {
+import java.io.Serializable;
+
+public class ContactInfo implements Serializable{
     String name;
     String mail;
     String content;
