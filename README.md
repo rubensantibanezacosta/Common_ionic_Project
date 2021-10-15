@@ -1,6 +1,6 @@
 # ​COMMON IONIC SPRING MYSQL PROJECT
 
-This is a early simulation of a E-shop.
+This is a early simulation of a E-shop, using Ionic with Angular for Frontend, and Spring Boot and MySQL for Backend.
 
 ## ​REQUIREMENTS
 
@@ -20,7 +20,7 @@ This is a early simulation of a E-shop.
 
 1. Clone repository.
 
-2. Import import.sql file from path backend/ to MySQL.
+2. Import import.sql file from path backend/ to MySQL. `backend/import.sql`
 
 3. Create file `aplication.properties` using `aplication.properties.model.txt` schema.
 
