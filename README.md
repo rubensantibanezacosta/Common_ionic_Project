@@ -31,7 +31,7 @@ Backend runs at port 8080, And Frontend runs default at port 8100.
 
 With Administrator privilleges:
 
-### ​ON UBUNTU
+### ​ LINUX
 
 - On root path execute `npm update`
 
@@ -43,7 +43,7 @@ With Administrator privilleges:
 
 - It takes aproximetly 1 minute.
 
-### ​ON WINDOWS
+### ​ WINDOWS
 
 - On root path execute `npm run w:install` to install packages.
 
