@@ -6,15 +6,15 @@ This is a early simulation of a E-shop, using Ionic with Angular for Frontend, a
 
 ### ​UBUNTU or WINDOWS
 
--Node.js
+- Node.js
 
--NPM
+- NPM
 
--Maven (Remember that on Windows you have to configure your path variable &quot;MAVEN\_HOME&quot;)
+- Maven (Remember that on Windows you have to configure your path variable &quot;MAVEN\_HOME&quot;)
 
--MySQL or MariaDB
+- MySQL or MariaDB
 
--JDK 11.
+- JDK 11.
 
 ## ​ **TO INITIALIZE**
 
