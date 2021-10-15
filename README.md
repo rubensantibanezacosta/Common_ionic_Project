@@ -27,7 +27,10 @@ This is a early simulation of a E-shop, using Ionic with Angular for Frontend, a
 
 4. Place there your MySQL credentials.
 
+
+
 Backend runs at port 8080, And Frontend runs default at port 8100.
+
 
 With Administrator privilleges:
 
@@ -51,11 +54,12 @@ With Administrator privilleges:
 
 - It takes aproximetly 1 minute.
 
-8. You can login with credentials:
+## You can login with credentials:
 
 email: `ruben@ruben.com`
 
 password: `1234`
+
 
 ## ​_Be FUN!!_
 
