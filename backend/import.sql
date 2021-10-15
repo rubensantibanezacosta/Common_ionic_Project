@@ -21,7 +21,7 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `Common`
 --
-CREATE DATABASE 'Common';
+CREATE DATABASE Common;
 -- --------------------------------------------------------
 
 --
