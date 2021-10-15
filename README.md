@@ -24,7 +24,7 @@ This is a early simulation of a E-shop, using Ionic with Angular for Frontend, a
 
 3. Create file `aplication.properties` using `aplication.properties.model.txt` schema.
 
-4. Place there your MySql credentials.
+4. Place there your MySQL credentials.
 
 With Administrator privilleges:
 
